@@ -6,6 +6,7 @@ import { Personalize } from "@/components/personalize"
 import { HowItWorks } from "@/components/how-it-works"
 import { Pricing } from "@/components/pricing"
 import { Testimonials } from "@/components/testimonials"
+import { Press } from "@/components/press"
 import { FAQ } from "@/components/faq"
 import { CTA } from "@/components/cta"
 import { Footer } from "@/components/footer"
@@ -21,6 +22,7 @@ export default function Page() {
       <HowItWorks />
       <Pricing />
       <Testimonials />
+      <Press />
       <FAQ />
       <CTA />
       <Footer />

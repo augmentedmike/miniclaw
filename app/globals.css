@@ -8,6 +8,28 @@
   }
 }
 
+@keyframes highlight-card-pulse {
+  0%, 100% {
+    box-shadow: 0 0 0 0 hsl(24 100% 55% / 0);
+  }
+  15% {
+    box-shadow: 0 0 30px 6px hsl(24 100% 55% / 0.45), 0 0 80px 16px hsl(24 100% 55% / 0.12);
+  }
+  35% {
+    box-shadow: 0 0 6px 2px hsl(24 100% 55% / 0.1);
+  }
+  55% {
+    box-shadow: 0 0 30px 6px hsl(24 100% 55% / 0.45), 0 0 80px 16px hsl(24 100% 55% / 0.12);
+  }
+  75% {
+    box-shadow: 0 0 6px 2px hsl(24 100% 55% / 0.1);
+  }
+}
+
+.animate-highlight-card {
+  animation: highlight-card-pulse 2.5s ease-in-out;
+}
+
 @layer base {
   :root {
     --background: 0 0% 4%;

@@ -38,10 +38,10 @@ export function Navbar() {
 
         <div className="hidden items-center gap-3 md:flex">
           <Button variant="ghost" size="sm" asChild>
-            <a href="#pricing">Download</a>
+            <a href="#download">Download</a>
           </Button>
           <Button size="sm" asChild>
-            <a href="#pricing">Order ClawMini</a>
+            <a href="#order">Order ClawMini</a>
           </Button>
         </div>
 
@@ -69,10 +69,10 @@ export function Navbar() {
             ))}
             <div className="mt-3 flex flex-col gap-2 border-t border-border/50 pt-4">
               <Button variant="outline" size="sm" asChild>
-                <a href="#pricing" onClick={() => setMobileOpen(false)}>Download</a>
+                <a href="#download" onClick={() => setMobileOpen(false)}>Download</a>
               </Button>
               <Button size="sm" asChild>
-                <a href="#pricing" onClick={() => setMobileOpen(false)}>Order ClawMini</a>
+                <a href="#order" onClick={() => setMobileOpen(false)}>Order ClawMini</a>
               </Button>
             </div>
           </div>
