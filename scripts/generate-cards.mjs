@@ -2,7 +2,15 @@ import { GoogleGenAI } from "@google/genai";
 import fs from "fs";
 import path from "path";
 
-const ai = new GoogleGenAI({ apiKey: "AIzaSyAY23xmz3_IdSWsIg9DogzEPVN3OsyATtQ" });
+const apiKey = process.env.GEMINI_API_KEY;
+
+if (!apiKey) {
+  console.error("❌ GEMINI_API_KEY environment variable not set");
+  console.error("Add it to your .env.local file");
+  process.exit(1);
+}
+
+const ai = new GoogleGenAI({ apiKey });
 
 const cards = [
   {
